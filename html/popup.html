@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/popup.css">    
+  </head>
+  <body>   
+    
+    <div class="login-container box" id="login-container">
+
+        <h3>Add a Proxy</h3>
+
+        <form action="../js/popup.js" method="POST" class="login-container"></form>
+
+          <span> <input type="text" id="username" autofocus="true" name="Username" placeholder="username" required="true"> </span>
+
+          <span> <input type="password" id="password" name="password" placeholder="Password" required="true"> </span>         
+
+          <span> <input type="text" id="host" name="host" placeholder="Host" required="true"> </span>
+
+          <span> <input type="text" id="port" name="port" placeholder="Port" required="true"> </span>
+
+          <span> <input type="password" id="spassword" name="password2" placeholder="Secure Password" required="true"> </span>
+
+          <span><button class="btn" id="submit" type="submit" value="save">Save & Apply</button></span>
+
+
+        </form>
+        
+    </div>
+
+    <div class="ip-container box" id="ip-container">
+      <div class="ip-details">
+        <h3 style="margin-bottom: 1.2rem;">IP Details</h3>
+        <span>IP :<span id="ip_address">Loading...</span></span>
+        <span>Country :<span id="country">Loading...</span></span>
+        <span>Region :<span id="region">Loading...</span></span>
+        <span>City :<span id="city">Loading...</span></span>
+        <span>Services :<span id="services">Loading...</span></span>
+        <span>ISP :<span id="isp">Loading...</span></span>
+      </div>
+      <button class="btn" id="ip_change"> Change IP </button>
+    </div>
+
+    <div class="change-ip box" id="change-ip">
+      <h3>Fill Password</h3>
+      <input type="password" name='vpassword' id="vpassword" placeholder="Enter Password" >
+      <span id="message"></span>
+      <button type="submit" class="btn" id="verifypass">Submit</button>
+    </div>
+    
+    <script src="../js/popup.js"></script>
+    <script src="../js/background.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    overflow: auto;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+html,body{
+    width: 300px;
+    height: auto;
+    overflow: auto;    
+}
+.login-container{
+    width: auto;
+    height: auto;
+    padding: 1rem 0.2rem;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.login-container span{
+    margin: 10px auto;
+}
+.login-container span input, .change-ip input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+.login-container span input:hover, .login-container span input:focus, .login-container span input::selection {
+    border: 1px solid #ccc;
+    outline: none;
+}
+.btn{    
+    padding: 0.5rem 3.5rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+.ip-container{
+    padding: 1rem 0.2rem;
+    display: none;
+    flex-wrap: wrap;
+}
+.ip-details{
+    display: flex;    
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 1rem 0.2rem;
+    padding-left: 2rem;
+    align-items: flex-start;
+}
+.ip-details span{
+    margin: 5px auto;
+    width: 100%;
+}
+.change-ip{
+    margin: 5px auto;
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.change-ip > input{
+    margin: 10px auto;
+}
